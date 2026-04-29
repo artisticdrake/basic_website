@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    :root {
+      --bg-start: #fff4d6;
+      --bg-end: #ffd6e7;
+      --text: #3b1f2b;
+      --accent: #ff7a59;
+      --card: rgba(255, 255, 255, 0.72);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 35%),
+        linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    }
+
+    .card {
+      width: min(90vw, 700px);
+      padding: 3rem 2rem;
+      text-align: center;
+      background: var(--card);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(59, 31, 43, 0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 10vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 1rem 0 0;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Happy <span class="accent">Birthday</span>!</h1>
+    <p>Wishing you a day full of joy, laughter, and cake.</p>
+  </main>
+</body>
+</html>
